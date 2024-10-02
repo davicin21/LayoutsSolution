@@ -1,4 +1,4 @@
-﻿namespace StackLayoutDemo
+﻿namespace GridLayoutDemo
 {
     public partial class App : Application
     {
@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NewPage1();
         }
     }
 }

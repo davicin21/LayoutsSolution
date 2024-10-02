@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridLayoutDemo.NewPage1"
+             Title="NewPage1">
+    <Grid RowDefinitions="1*,9*">
+        <!--Primera Fila-->
+        <Grid ColumnDefinitions="*,*,*,*">
+            <Border Grid.Column="0">
+                <Label Text="Espacio 1" VerticalOptions="Center" Margin="20,0,0,0" HorizontalTextAlignment="Center"/>
+            </Border>
+            <Border Grid.Column="1">
+                <Label Text="Espacio 2" VerticalOptions="Center" HorizontalTextAlignment="Center"/>
+            </Border>
+            <Border Grid.Column="2">
+                <Label Text="Espacio 3" VerticalOptions="Center" HorizontalTextAlignment="Center"/>
+            </Border>
+            <Border Grid.Column="3">
+                <Label Text="Espacio 4" VerticalOptions="Center" HorizontalTextAlignment="Center"/>
+            </Border>
+        </Grid>
+        <!--<HorizontalStackLayout Grid.Row="0" BackgroundColor="Blue" Spacing="20">
+            <Label Text="Label 1" VerticalOptions="Center" Margin="20,0,0,0"/>
+            <Label Text="Label 2" VerticalOptions="Center" Margin="20,0,0,0"/>
+            <Label Text="Label 3" VerticalOptions="Center" Margin="20,0,0,0"/>
+            <Label Text="Label 4" VerticalOptions="Center" Margin="20,0,0,0"/>
+        </HorizontalStackLayout>-->
+        <!--Segunda Fila-->
+        <Grid Grid.Row="1" ColumnDefinitions="3*,7*">
+            <VerticalStackLayout>
+                <Button Text="Boton1" Margin="4"/>
+                <Button Text="Boton2" Margin="4"/>
+                <Button Text="Boton3" Margin="4"/>
+                <Button Text="Boton4" Margin="4"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>
