@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AbsoluteLayoutDemo.AbsoluteLayoutPage"
+             Title="AbsoluteLayoutPage"
+             Background="Red">
+    <AbsoluteLayout>
+        <!--<Button Text="Click me!" AbsoluteLayout.LayoutBounds="100, 50, 100, 50"/>
+        <Button Text=".Net Maui" 
+                AbsoluteLayout.LayoutBounds="10,200,.9,200"
+                AbsoluteLayout.LayoutFlags="WidthProportional"/>-->
+        <BoxView x:Name="bvControl">
+            <BoxView.Color>
+                <Color>#FF5733</Color>
+            </BoxView.Color>
+        </BoxView>
+    </AbsoluteLayout>
+</ContentPage>
